@@ -1,0 +1,213 @@
+/* Общие стили */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #10131a;
+    color: #fff;
+}
+
+/* Шапка */
+.header {
+    background: #151a24;
+    padding: 10px 0;
+    border-bottom: 2px solid #222;
+}
+
+.header-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ccc;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #fff;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: #1c2230;
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Поиск */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: #1e2533;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.search-bar input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 5px;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    color: #ccc;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-bar button:hover {
+    color: #fff;
+}
+
+/* Сетка фильмов */
+.movies-grid-container {
+    display: flex;
+    gap: 20px;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.movies-grid {
+    flex: 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.movie-card {
+    background: #1a1f2c;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.movie-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.7);
+}
+
+.movie-info {
+    padding: 10px;
+    text-align: center;
+}
+
+.movie-info h5 {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #fff;
+}
+
+.movie-info p {
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar-block {
+    background: #1c2230;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.sidebar-block h4 {
+    margin: 0 0 10px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+}
+
+/* Footer */
+.footer {
+    background: #151a24;
+    padding: 20px 0;
+    margin-top: 30px;
+    border-top: 2px solid #222;
+}
+
+.footer-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    height: 40px;
+}
+
+.footer-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.footer-nav a:hover {
+    color: #fff;
+}
+
+.footer-social a {
+    color: #ccc;
+    margin-left: 10px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: #fff;
+}
+
+copyright {
+    text-align: center;
+    padding: 10px;
+    background: #10131a;
+    font-size: 14px;
+    color: #777;
+}
